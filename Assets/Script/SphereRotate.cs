@@ -11,6 +11,7 @@ public class SphereRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //カメラが回らないよう回転しないように固定
         transform.Rotate(0, Input.GetAxis("Horizontal2"), 0);
 
         GameObject CameraParent = Camera.main.transform.parent.gameObject;
